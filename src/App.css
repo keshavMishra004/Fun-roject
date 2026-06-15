@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  background: linear-gradient(
+    -45deg,
+    #ff9a9e,
+    #fad0c4,
+    #ffd1ff,
+    #00354d
+  );
+
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+.card {
+  width: 700px;
+  max-width: 90%;
+
+  background: rgba(240, 246, 57, 0.782);
+
+  backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  color: rgb(253, 135, 135);
+
+  box-shadow:
+    0 0 50px rgba(168,85,247,.25);
+
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+.gif {
+  width: 180px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #5b2d35;
+  margin-bottom: 20px;
+}
+
+p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.yesBtn,
+.pinkBtn {
+  border: none;
+  padding: 14px 30px;
+  border-radius: 40px;
+  background: pink;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.noBtn {
+  position: fixed;
+  border: none;
+  background: #ffb6c1;
+  padding: 14px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+input,
+select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.foodGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.foodCard {
+  background: #faf2f5;
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.foodCard:hover {
+  transform: scale(1.05);
+}
+
+.heartBurst {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 2rem;
+  z-index: 1000;
+
+  animation: burst 2s ease forwards;
+}
+
+@keyframes burst {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -250%) scale(3);
+  }
+}
+
+.selectedFood {
+  background: #ff6b9d;
+  color: white;
+  transform: scale(1.05);
+  border: 2px solid white;
+}
