@@ -75,6 +75,7 @@ export default function Proposal() {
             <button
               className="noBtn"
               onMouseEnter={moveButton}
+              onTouchStart={moveButton}
               style={position}
             >
               No 😭
