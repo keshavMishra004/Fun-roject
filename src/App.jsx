@@ -11,7 +11,7 @@ function App() {
     <>
       <audio id="bgMusic" loop>
         <source
-          src="/Edd_Sheeran_-_Perfect_(mp3.pm).mp3"
+          src="Char.mp3"
           type="audio/mpeg"
         />
       </audio>

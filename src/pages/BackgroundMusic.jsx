@@ -11,7 +11,7 @@ export default function BackgroundMusic() {
 
   return (
     <audio ref={audioRef} loop>
-      <source src="Edd_Sheeran_-_Perfect_(mp3.pm).mp3" type="audio/mpeg" />
+      <source src="Char.mp3" type="audio/mpeg" />
     </audio>
   );
 }
