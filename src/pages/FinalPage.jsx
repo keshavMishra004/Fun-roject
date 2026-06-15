@@ -20,7 +20,7 @@ export default function FinalPage() {
         </h2>
         <br></br>
         <p>
-          To give website review - keshav_miss
+          To give website review - keshav_mizz
         </p>
       </div>
     </div>
